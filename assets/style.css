@@ -2,6 +2,12 @@ main {
 display: flex;
 }
 
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    padding:1%;
+}
+
 h1 {
     background-color: purple;
     color: white;
@@ -10,9 +16,14 @@ h1 {
 .searchbtn {
     background-color: purple;
     color: white;
+    margin: 5%
 }
 
-.weatherinfo {
+.weatherInfo {
     border: 2px solid black;
+    color: black;
 }
 
+.hidden {
+    display: none;
+}
