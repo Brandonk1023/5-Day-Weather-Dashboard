@@ -9,6 +9,10 @@ let cityLon = ""
 
 //GEO URL
 //http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
+
+//ICON URL
+//http://openweathermap.org/img/wn/{ICON}@2x.png
+
 function getWeather() {
     let cityName = document.getElementById("citySearchInput").value
     let geoApi = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=1&appid=" + apiKey
@@ -39,9 +43,8 @@ function getWeather() {
         })
 
 
-    for (i = 0; i < 5; i++) {
-
-    }
+    //for (i = 0; i < 5; i++) {
+    //}
 
     function addSearchHistory() {
 

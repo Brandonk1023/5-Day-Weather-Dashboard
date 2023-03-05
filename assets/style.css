@@ -27,3 +27,11 @@ h1 {
 .hidden {
     display: none;
 }
+
+.forcast {
+    display: flex;
+}
+
+.card {
+
+}
