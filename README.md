@@ -1,19 +1,43 @@
 # 5-Day-Weather-Dashboard
 
+## Description
 
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
+- What was your motivation?
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+- What problem does it solve?
+- What did you learn?
 
+## Table of Contents
 
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
+## Installation
+
+This is a browser based application.  No extra installation steps are required.  Just open in browser to run.
+
+## Usage
+
+Provide instructions and examples for use. Include screenshots as needed.
+
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+
+    ```md
+    ![alt text](assets/images/screenshot.png)
+    ```
+
+## Credits
+
+OpenWeather Geocoding API:
+https://openweathermap.org/api/geocoding-api
+
+OpenWeather 5 Day Weather Forecast API:
+https://openweathermap.org/forecast5
+
+## License
+
+MIT License
