@@ -2,12 +2,7 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+The aim of this application was to build an easy to use weather application for the end user.  One that would allow the user to quickly get a weather forecast that would cover 5 days for any city that was searched.  Also would allow the user to refer back to their search history from before and use that to get update weather.  With building this project,  I was able to learn more about API implementation, and how to use that data in my applications.
 
 ## Table of Contents
 
@@ -22,13 +17,11 @@ This is a browser based application.  No extra installation steps are required. 
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+To use the application.  First open it in browser, and then the user will see a search box.  Enter the name of the city in the search box you would like to see weather for.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+The user will then be presented with the weather forecast for today and for 5 days.  The search will also be stored into the local storage for the user to return to later if needed.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+[Application Screen](assets/images/screenshot.png)
 
 ## Credits
 
