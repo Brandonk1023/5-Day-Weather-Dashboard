@@ -3,6 +3,18 @@ document.getElementById("searchbtn").addEventListener("click", getWeather)
 let apiKey = "e917200951340ec1a63349a80625798c"
 let cityLat = ""
 let cityLon = ""
+//let time = dayjs()
+let searchHistory = []
+let searchedCity = {}
+
+//searchHistory-Array used for storing object data for search history
+/*
+    {
+        cityName: EXAMPLE;
+        cityLat: EXAMPLE;
+        cityLon: Example;
+    }
+*/
 
 //5 day forecast URL
 //http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
@@ -28,6 +40,17 @@ function getWeather() {
             console.log(cityLat, "CITY LAT VALUE")
             cityLon = data[0].lon
             console.log(cityLon, "CITY LON VALUE")
+
+            searchedCity = {
+                Name: cityName,
+                Lat: cityLat,
+                Lon: cityLon,
+            }
+
+            console.log(searchedCity, "SC Value")
+
+            searchHistory.push(searchedCity)
+            console.log(searchHistory, "SEARCH History Value")
             
             let weatherApi = "https://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=" + apiKey
 
@@ -48,8 +71,6 @@ function getWeather() {
 
     function addSearchHistory() {
 
-        document.createElement("button")
-        document.getElementById("searchHistory").appendChild("button")
 
     }
 }
