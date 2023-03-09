@@ -7,15 +7,6 @@ let cityLon = ""
 let searchHistory = []
 let searchedCity = {}
 
-//searchHistory-Array used for storing object data for search history
-/*
-    {
-        cityName: EXAMPLE;
-        cityLat: EXAMPLE;
-        cityLon: Example;
-    }
-*/
-
 //5 day forecast URL
 //http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
 
@@ -51,6 +42,8 @@ function getWeather() {
 
             searchHistory.push(searchedCity)
             console.log(searchHistory, "SEARCH History Value")
+
+            window.localStorage.setItem(searchHistory, JSON.stringify(searchHistory))
             
             let weatherApi = "https://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=" + apiKey
 
